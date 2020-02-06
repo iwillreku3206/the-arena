@@ -5,6 +5,9 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public Transform playerTransform;
+    
+    public Camera camera;
+    public float mouseSensitivity;
 
     public Object bullet;
 
@@ -12,6 +15,10 @@ public class Movement : MonoBehaviour
     void Start()
     {
         playerTransform = gameObject.GetComponent<Transform>();
+        
+        Cursor.LockState = CursorLockMode.None;
+        Cursor.visible = false;
+      
     }
 
     // Update is called once per frame
