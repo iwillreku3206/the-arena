@@ -1,15 +1,25 @@
 ﻿<Properties StartupConfiguration="{F0613411-C2B7-A76B-3633-98858ADAD2CD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../../NewMonoBehaviour.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI.cs">
     <Files>
-      <File FileName="Assets/Scripts/Movement.cs" Line="9" Column="24" />
+      <File FileName="Assets/Scripts/Movement.cs" Line="31" Column="9" />
       <File FileName="Assets/Scripts/Bullet.cs" Line="28" Column="29" />
-      <File FileName="Assets/Scripts/Player.cs" Line="28" Column="25" />
-      <File FileName="../../../../../../../NewMonoBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player.cs" Line="49" Column="38" />
+      <File FileName="Assets/Scripts/UI.cs" Line="30" Column="1" />
+      <File FileName="Assets/ProgressBar/Script/ProgressBar.cs" Line="57" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="The Arena" expanded="True" selected="True" />
+          <Node name="The Arena" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="ProgressBar" expanded="True">
+                <Node name="Script" expanded="True" />
+              </Node>
+              <Node name="Scripts" expanded="True">
+                <Node name="UI.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

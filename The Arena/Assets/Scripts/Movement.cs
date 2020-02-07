@@ -11,13 +11,17 @@ public class Movement : MonoBehaviour
 
     public Object bullet;
 
+    public Player player;
+
+    
+        
     // Start is called before the first frame update
     void Start()
     {
         playerTransform = gameObject.GetComponent<Transform>();
         
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
       
     }
 
@@ -29,7 +33,7 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.Translate(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"))*Time.deltaTime);
+        transform.Translate(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * Time.deltaTime * player.speed);
 
         transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X")));
 
@@ -37,6 +41,15 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Instantiate(bullet, playerTransform.position + (playerTransform.forward * 1f) + new Vector3(0, 1.5f), playerTransform.rotation);
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift) && player.stamina > 0)
+        {
+            player.speed = player.runSpeed;
+            player.stamina -= 0.25f;
+        } else
+        {
+            player.speed = player.baseSpeed;
         }
     }
 
