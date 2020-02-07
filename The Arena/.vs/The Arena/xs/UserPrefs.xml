@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{F0613411-C2B7-A76B-3633-98858ADAD2CD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Bullet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../../NewMonoBehaviour.cs">
     <Files>
-      <File FileName="Assets/Scripts/Movement.cs" Line="31" Column="10" />
-      <File FileName="Assets/Scripts/Bullet.cs" Line="25" Column="75" />
-      <File FileName="Assets/Scripts/Player.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/Movement.cs" Line="9" Column="24" />
+      <File FileName="Assets/Scripts/Bullet.cs" Line="28" Column="29" />
+      <File FileName="Assets/Scripts/Player.cs" Line="28" Column="25" />
+      <File FileName="../../../../../../../NewMonoBehaviour.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +16,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="399117a6-1afa-4363-bec1-c26520be8c0d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d183aa51-ba5a-4832-b05d-4e4103f21148" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

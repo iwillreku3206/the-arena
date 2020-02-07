@@ -22,10 +22,10 @@ public class Player : MonoBehaviour
             dead = true;
         }
         if (stamina > maxStamina) {
-            stamina = maxStamina
+            stamina = maxStamina;
         }
         if (0 > stamina) {
-            stamina = 0
+            stamina = 0;
         }
     }
 

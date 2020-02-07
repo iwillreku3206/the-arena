@@ -1,17 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
     public Player player;
-    public SphereCollider collider;
+    public SphereCollider bulletCollider;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<Player>();
-        collider = gameObject.GetComponent<SphereCollider>();
+        bulletCollider = gameObject.GetComponent<SphereCollider>();
     }
 
     // Update is called once per frame
@@ -20,9 +21,11 @@ public class Bullet : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * player.bulletSpeed);
     }
 
-    private void OnCollisionEnter(Collision collision)
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        System.Console.WriteLine("Collided with {0}", collision.gameObject);
+        Destroy(gameObject);
     }
 }
     

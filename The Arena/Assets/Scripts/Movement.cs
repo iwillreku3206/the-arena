@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
     public Transform playerTransform;
     
-    public Camera camera;
+    public Camera mainCamera;
     public float mouseSensitivity;
 
     public Object bullet;
@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
     {
         playerTransform = gameObject.GetComponent<Transform>();
         
-        Cursor.LockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
       
     }
@@ -36,7 +36,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(bullet, playerTransform.position + (playerTransform.forward * 2) + new Vector3(0, 0.5f), playerTransform.rotation);
+            Instantiate(bullet, playerTransform.position + (playerTransform.forward * 1f) + new Vector3(0, 1.5f), playerTransform.rotation);
         }
     }
 
