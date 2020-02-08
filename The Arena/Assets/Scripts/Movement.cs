@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     public Transform playerTransform;
     
     public Camera mainCamera;
-    public float mouseSensitivity;
+    
 
     public Object bullet;
 
@@ -20,8 +20,8 @@ public class Movement : MonoBehaviour
     {
         playerTransform = gameObject.GetComponent<Transform>();
         
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
       
     }
 
@@ -35,7 +35,8 @@ public class Movement : MonoBehaviour
     {
         transform.Translate(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * Time.deltaTime * player.speed);
 
-        transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X")));
+        transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X") * 5f));
+        
 
 
         if (Input.GetButtonDown("Fire1"))
