@@ -20,6 +20,8 @@ public class UI : MonoBehaviour
     {
         healthBar = GameObject.Find("HealthBar").GetComponent<ProgressBar>();
         staminaBar = GameObject.Find("StaminaBar").GetComponent<ProgressBar>();
+
+        fpsText = GameObject.Find("FPSCounter").GetComponent<Text>();
     }
 
     // Update is called once per frame

@@ -3,9 +3,9 @@
     <Files>
       <File FileName="Assets/Scripts/Movement.cs" Line="31" Column="9" />
       <File FileName="Assets/Scripts/Bullet.cs" Line="28" Column="29" />
-      <File FileName="Assets/Scripts/Player.cs" Line="49" Column="38" />
-      <File FileName="Assets/Scripts/UI.cs" Line="30" Column="1" />
-      <File FileName="Assets/ProgressBar/Script/ProgressBar.cs" Line="57" Column="51" />
+      <File FileName="Assets/Scripts/Player.cs" Line="55" Column="1" />
+      <File FileName="Assets/Scripts/UI.cs" Line="28" Column="18" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="16" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d183aa51-ba5a-4832-b05d-4e4103f21148" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="61533270-1ac1-4c8a-b235-31ad1326d33d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
