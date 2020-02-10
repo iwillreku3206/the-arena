@@ -25,6 +25,11 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.name == "Enemy")
+        {
+            other.gameObject.SendMessage("TakeDamage", player.bulletDamage);
+        }
+
         Destroy(gameObject);
     }
 }

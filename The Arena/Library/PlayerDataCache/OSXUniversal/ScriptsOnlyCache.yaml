@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Bullet
+    - Enemy
     - Movement
     - Player
     - ProgressBar
@@ -20,9 +21,13 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.PostProcessing.PostProcessResources
     - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
     - UnityEngine.Rendering.PostProcessing.Vignette
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -50,6 +55,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 65
@@ -64,32 +71,44 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9720}
+      Script: {instanceID: 9742}
     - Class: 114
-      Script: {instanceID: 9740}
+      Script: {instanceID: 9762}
     - Class: 114
-      Script: {instanceID: 9910}
+      Script: {instanceID: 9932}
     - Class: 114
-      Script: {instanceID: 9950}
+      Script: {instanceID: 9972}
     - Class: 114
-      Script: {instanceID: 10356}
+      Script: {instanceID: 10316}
     - Class: 114
-      Script: {instanceID: 10618}
+      Script: {instanceID: 10382}
     - Class: 114
-      Script: {instanceID: 10778}
+      Script: {instanceID: 10404}
     - Class: 114
-      Script: {instanceID: 11062}
+      Script: {instanceID: 10444}
     - Class: 114
-      Script: {instanceID: 11202}
+      Script: {instanceID: 10646}
     - Class: 114
-      Script: {instanceID: 11218}
+      Script: {instanceID: 10714}
     - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 10808}
     - Class: 114
-      Script: {instanceID: 13004}
+      Script: {instanceID: 10990}
     - Class: 114
-      Script: {instanceID: 13268}
+      Script: {instanceID: 11004}
+    - Class: 114
+      Script: {instanceID: 11092}
+    - Class: 114
+      Script: {instanceID: 11232}
+    - Class: 114
+      Script: {instanceID: 11248}
+    - Class: 114
+      Script: {instanceID: 11406}
+    - Class: 114
+      Script: {instanceID: 11618}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -229,6 +248,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 735147f2ee7307da7bb94c8c762d823e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProgressBarCircle
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -319,6 +344,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: babcddaca0e075af60191ddd2b395059
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProgressBar
+  - hash:
+      serializedVersion: 2
       Hash: 7e6ed836cbaa230e56d6a2bbae1b9bb5
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -353,6 +384,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 196257f389b633d5f90caecfbd0fc8f8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy
   - hash:
       serializedVersion: 2
       Hash: 61b9d9b6f4b6a222dfea8b131b3d3227
@@ -403,6 +440,12 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 6491cbe80e5a957c0963d99040696f26
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UI
+  - hash:
+      serializedVersion: 2
       Hash: 50c443b12ccc0b475183318b5088bcc5
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -427,7 +470,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 594c8df257868ed5865ecbe9bd2873f0
+      Hash: 1d769e93685f2834225e37870a5f37ba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Movement
@@ -521,6 +564,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 049da38e04b44d779517153fb9e33896
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Demo
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -641,31 +690,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 6491cbe80e5a957c0963d99040696f26
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UI
-  - hash:
-      serializedVersion: 2
-      Hash: 735147f2ee7307da7bb94c8c762d823e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ProgressBarCircle
-  - hash:
-      serializedVersion: 2
-      Hash: babcddaca0e075af60191ddd2b395059
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ProgressBar
-  - hash:
-      serializedVersion: 2
-      Hash: 049da38e04b44d779517153fb9e33896
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Demo
   platform: 2
   scenePathNames:
   - Assets/Scene/MainScene.unity
-  playerPath: /Users/ino/Desktop/Coding/Projects/the-arena/Builds/The Arena v0.0.1a.app
+  playerPath: /Users/ino/Desktop/Coding/Projects/the-arena/Builds/The Arena v0.1a.app
