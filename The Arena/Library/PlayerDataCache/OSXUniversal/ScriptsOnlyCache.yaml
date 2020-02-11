@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Bullet
     - Enemy
+    - Game
     - Movement
     - Player
     - ProgressBar
@@ -28,6 +29,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -109,6 +111,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11406}
     - Class: 114
       Script: {instanceID: 11618}
+    - Class: 114
+      Script: {instanceID: 14706}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -117,6 +121,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
     - Class: 222
@@ -124,6 +132,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 238
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -386,7 +396,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 196257f389b633d5f90caecfbd0fc8f8
+      Hash: f1c5141fa31a9b281b8f57024f281ba1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -542,7 +552,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: ecc34d9963f2e6ce796ab9416324033e
+      Hash: 120035682809505e4df7f81aee3ef963
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -690,7 +700,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 0b4472400a7fb8dc12e9a332f3611f3e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Game
   platform: 2
   scenePathNames:
   - Assets/Scene/MainScene.unity
-  playerPath: /Users/ino/Desktop/Coding/Projects/the-arena/Builds/The Arena v0.1a.app
+  playerPath: /Users/ino/Desktop/Coding/Projects/the-arena/Builds/The Arena v0.2a/The
+    Arena v0.2a [MAC].app

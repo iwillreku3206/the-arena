@@ -1,0 +1,16 @@
+{
+"companyName": "IWillRekU3206",
+"productName": "The Arena",
+"productVersion": "0.2",
+"dataUrl": "The Arena v0.2a [WEBGL].data.unityweb",
+"wasmCodeUrl": "The Arena v0.2a [WEBGL].wasm.code.unityweb",
+"wasmFrameworkUrl": "The Arena v0.2a [WEBGL].wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.12f1"
+}
