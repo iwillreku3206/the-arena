@@ -1,4 +1,6 @@
 # The Arena
+![Build project](https://github.com/iwillreku3206/the-arena/workflows/Build%20project/badge.svg)
+
 An fps where you fight a mob with increasing numbers
 
 ## On file name versions
