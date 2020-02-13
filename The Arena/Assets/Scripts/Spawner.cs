@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour {
-    public object enemy;
+    public Object enemy;
     
     public Game game;
     
