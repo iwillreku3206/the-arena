@@ -7,15 +7,15 @@ public class Spawner : MonoBehaviour {
     
     public Game game;
     
-    int fixedFramesPerSecond;
-    int sCount = 0;
+    float fixedFramesPerSecond;
+    float sCount = 0;
     
     private void FixedUpdate() {
         fixedFramesPerSecond = 1 / Time.fixedDeltaTime;
         
         sCount++;
         if (game.enemySpawnRate <= sCount) {
-            Instantiate(enemy, gameObject.position, gameObject.rotation);
+            Instantiate(enemy, gameObject.transform.position, gameObject.transform.rotation);
             
             sCount = 0;
         }
