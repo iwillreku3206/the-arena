@@ -13,7 +13,11 @@ public class Game : MonoBehaviour
 
     public float enemySpeed = 1f;
     public float enemySpawnRate = 50000f;
-
+    
+    public int score;
+    public int money;
+    public int kills;
+    
     private void FixedUpdate()
     {
         framesPerMinute = Convert.ToInt32(Math.Round(60 / Time.fixedDeltaTime));
