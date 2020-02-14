@@ -7,6 +7,9 @@ public class Bullet : MonoBehaviour
 {
     public Player player;
     public SphereCollider bulletCollider;
+    
+    public Game game;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,10 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.name == "Enemy")
         {
+            game.score += game.minutesPassed;
+            game.money += game.minutesPassed;
+            game.kills++;
+            
             other.gameObject.SendMessage("TakeDamage", player.bulletDamage);
         }
 
