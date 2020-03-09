@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public Game game;
+
     public float baseSpeed = 1f;
     public float runSpeed = 10f;
     public float speed = 1f;
@@ -22,6 +24,7 @@ public class Player : MonoBehaviour
     public float bulletDamage = 2.5f;
 
     public int staminaRestoreCooldown = 0;
+
 
     // Start of game stats
     public int kills = 0;
@@ -41,6 +44,10 @@ public class Player : MonoBehaviour
             stamina = 0;
         }
 
+        if (dead)
+        {
+            Game.ResetGame(game);
+        }
     }
 
     private void FixedUpdate()

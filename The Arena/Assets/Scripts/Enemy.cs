@@ -37,11 +37,20 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
-            player.kills++;
-            player.score += game.minutesPassed;
+            game.score += game.minutesPassed + 1;
+            game.money += game.minutesPassed;
+            game.kills++;
 
             Destroy(gameObject);
+
+
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.name == "Player")
+            player.health--;
     }
 
     public void TakeDamage(float damage)

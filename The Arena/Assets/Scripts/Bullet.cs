@@ -14,7 +14,11 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+
         player = GameObject.Find("Player").GetComponent<Player>();
+        game = GameObject.Find("Game").GetComponent<Game>();
+
         bulletCollider = gameObject.GetComponent<SphereCollider>();
     }
 
@@ -28,11 +32,8 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Enemy")
+        if (other.gameObject.name == "Enemy(Clone)")
         {
-            game.score += game.minutesPassed;
-            game.money += game.minutesPassed;
-            game.kills++;
             
             other.gameObject.SendMessage("TakeDamage", player.bulletDamage);
         }
